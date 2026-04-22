@@ -12,6 +12,7 @@ It is intentionally lightweight: you run a single script in the browser console 
 - Preserves hierarchy as nested Logseq-style bullet blocks.
 - Renders completed items as `DONE ...`.
 - Preserves WorkFlowy notes as child blocks.
+- Downloads inline images as separate files when WorkFlowy exposes an image URL, and rewrites Markdown to point to those local files.
 - Detects mirrors and keeps them as explicit readable fallback text.
 - Detects WorkFlowy internal links and keeps them as annotated fallback text when a true Logseq block ref is not resolved.
 
@@ -20,7 +21,7 @@ It is intentionally lightweight: you run a single script in the browser console 
 - Mirrors are not yet converted to true `{{embed ((block-id))}}` syntax.
 - Internal WorkFlowy links are not yet converted to true `((block-ref))` syntax.
 - The HTML to Markdown conversion is intentionally lightweight and may still need refinement for rare formatting cases.
-- Export is browser-driven file download, not a zip archive or local CLI workflow.
+- Export is browser-driven file download, so assets are downloaded as separate files rather than as a zip archive with folders.
 
 ## How to use it
 
